@@ -18,8 +18,8 @@ int main()
 
     if (delta >= 0)
     {
-        x1 = -b + sqrt(delta) / 2*a;
-        x2 = -b - sqrt(delta) / 2*a;
+        x1 = (-b + sqrt(delta)) / (2*a);
+        x2 = (-b - sqrt(delta)) / (2*a);
         r1 = (int)x1;
         r2 = (int)x2;
         if (r1 == x1 && r2 == x2 && r1 != r2)
