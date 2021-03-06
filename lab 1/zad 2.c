@@ -28,11 +28,11 @@ int main()
         }
         else if (r1 == x1)
         {
-            printf("Rownanie ma jedem pierwiastek calkowity: %d", r1);
+            printf("Rownanie ma jeden pierwiastek calkowity: %d", r1);
         }
         else if (r2 == x2 && r1 != r2)
         {
-            printf("Rownanie ma jedem pierwiastek calkowity: %d", r2);
+            printf("Rownanie ma jeden pierwiastek calkowity: %d", r2);
         }
         else
         {
