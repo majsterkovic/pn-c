@@ -5,7 +5,7 @@ int main() {
     int a, b, c;
     int calk = 0;
     int wym = 0;
-    scanf("%d%d%d", &a, &b, &c);
+    scanf("%i%i%i", &a, &b, &c);
 
     for(int i = 1; i <= abs(c); i++)
     {
@@ -31,7 +31,8 @@ int main() {
             {
                 if(a%j == 0)
                 {
-                    float z = i/j;
+                    float z = (float)i/(float)j;
+                    printf("%f\n", z);
                     if( z*z*a+z*b+c == 0 )
                     {
                         wym++;

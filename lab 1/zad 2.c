@@ -5,9 +5,9 @@ int main()
 {
     int a, b, c;
 
-    scanf("%d", &a);
-    scanf("%d", &b);
-    scanf("%d", &c);
+    scanf("%i", &a);
+    scanf("%i", &b);
+    scanf("%i", &c);
    
     float delta = (b * b) - (4 * a * c);
     float x1 = 0;
