@@ -5,7 +5,6 @@ void menu()
 {
     printf("Co chcesz zrobic?\n");
     printf("Wpisz 1, aby wybrac zadanie 1 lub 2, aby wybrac zadanie 2\n");
-    printf("Wpisz 3, aby zakonczyc dzialanie programu.\n");
 }
 
 void zadanie1()
@@ -32,9 +31,12 @@ int main() {
             case 2:
                 zadanie2();
                 break;
-            case 3:
-                end = true;
-                break;
+        }
+        printf("Wpisz 3, aby zakonczyc dzialanie programu lub 4 by kontynuowac.\n");
+        scanf("%d", &x);
+        if(x == 3)
+        {
+            end = true;
         }
 
 

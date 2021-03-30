@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 void zamienNapis(char napis[])
 {
     int l = strlen(napis);
     for(int i = 0; i<l; i++)
     {
-        if(islower(napis[i]))
+        if((napis[i] >= 97) && (napis[i] <= 122))
         {
-            napis[i] = toupper(napis[i]);
+            napis[i] -= 32;
         }
-        else
+        else if((napis[i] >= 65) && (napis[i] <= 90))
         {
-            napis[i] = tolower(napis[i]);
+            napis[i] += 32;
         }
     }
 }
